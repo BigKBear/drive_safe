@@ -23,7 +23,6 @@ class Database{
     	    self::$_instance = new Database();
     	}
     	    return self::$_instance;
-    	
 	}
 
     //Defining all the Actions
@@ -106,5 +105,4 @@ class Database{
        
    }
 }
-
 ?>
