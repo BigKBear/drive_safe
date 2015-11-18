@@ -1,4 +1,10 @@
 <?php
+    $expire=time()+(60*60*24*7);
+            //setcookie($name,$value,$expire);
+            //setcookie("user_password",$_SESSION["password"],$expire);
+            setcookie("user_user",$_SESSION["user"],$expire);
+            setcookie("user_role",$_SESSION["role"],$expire);
+            //var_dump($_SESSION);
     session_start();
    
     //Detect Mobile Browser
@@ -9,7 +15,7 @@
 ?>
 <?php
 //1.Create a database connection
-   $db_servername = '127.0.0.1';
+    $db_servername = '127.0.0.1';
     $db_user1 = 'bigkbear';
 	$db_password = '';
 	$db_name = 'c9';
@@ -153,7 +159,7 @@
             mysqli_free_result($result);
             $_SESSION["user"] = $_POST['user'];
             $_SESSION["password"]= $_POST['pass'];
-            //var_dump($_SESSION);
+            
         ?>
     </body>
 </html> 

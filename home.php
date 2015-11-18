@@ -4,7 +4,7 @@
     include('layouts/header.php');
     $app = new Application($_POST);
 ?>
-Welcome to drive Safe <?php echo $_SESSION['user'];?>
+Welcome to drive Safe <?php echo $_SESSION['user']; print " ".$_COOKIE['user_user']?>
 <br>
 These are the rules on barbados roads: 
 <br>
